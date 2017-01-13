@@ -1,7 +1,6 @@
 <template>
   <transition
-    enter-active-class="animated bounceOutRight"
-    leave-active-class="animated tada">
+    enter-active-class="animated bounceInLeft">
     <router-view></router-view>
   </transition>
 </template>

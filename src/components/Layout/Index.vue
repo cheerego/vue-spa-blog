@@ -1,11 +1,11 @@
 <template>
   <div  class="container">
     <div id="particlesJS"></div>
-    <Card></Card>
+    <Profile></Profile>
   </div>
 </template>
 <script>
-  import Card from '../Partials/Card.vue'
+  import Profile from '../Partials/Profile.vue'
   export default{
     name: "",
     data(){
@@ -90,7 +90,7 @@
               "mode": "repulse"
             },
             "onclick": {
-              "enable": true,
+              "enable": false,
               "mode": "push"
             },
             "resize": true
@@ -127,7 +127,7 @@
     methods: {
     },
     components: {
-      Card
+      Profile
     }
   };
 </script>
