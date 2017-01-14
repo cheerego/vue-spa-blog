@@ -28,4 +28,4 @@ export default {
   }
 }
 ```
-
+![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-2%402x.png)
