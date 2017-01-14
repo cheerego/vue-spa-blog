@@ -15,13 +15,15 @@ npm run build //生成dist
 ```
 # 配置
 配置文件在项目目录下的src/conf/config.js下
+Profile属性主要在profile里面添加与修改
 ```
 export default {
-  'server_base_url': 'http://localhost/laravel-blog/public', //这个配置项表示的是laravel的入口文件的目录，会根据这个路径去拼接api的链接
+  'server_base_url': 'http://localhost/laravel-blog/public',
   'profile': {
     'github': 'https://github.com/cheerzz',
     'weibo': 'http://weibo.com/u/1767872324',
-    'avatar_url':''
+    'avatar_url':'http://www.semantic-ui.cn/images/avatar2/large/kristy.png',
+    'name':'placeless'
   },
   url: {
     'getOnePost':'/api/getPost'
@@ -29,4 +31,7 @@ export default {
 }
 ```
 
+![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-2@2x.png)
+![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-3@2x.png)
+![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-4@2x.png)
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/2017-01-14 18.28.44.gif)

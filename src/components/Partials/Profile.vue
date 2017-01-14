@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<script><img src="../../../../../Pictures/FN2V63AD2J.com.tencent.ScreenCapture2/2017-01-14 18.23.39.gif"/>
+<script>
   import { init } from 'ityped';
   import config from '../../conf/config';
   export default{
