@@ -18,6 +18,7 @@ npm run build //生成dist
 Profile属性主要在profile里面添加与修改
 ```
 export default {
+  // 路径是laravel的入口文件index.php的目录
   'server_base_url': 'http://localhost/laravel-blog/public',
   'profile': {
     'github': 'https://github.com/cheerzz',
