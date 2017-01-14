@@ -6,7 +6,8 @@ export default {
   'profile': {
     'github': 'https://github.com/cheerzz',
     'weibo': 'http://weibo.com/u/1767872324',
-    'avatar_url':''
+    'avatar_url':'http://www.semantic-ui.cn/images/avatar2/large/kristy.png',
+    'name':'placeless'
   },
   url: {
     'getOnePost':'/api/getPost'

@@ -13,9 +13,7 @@ import 'normalize.css';
 import 'animate.css';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
-import 'semantic-ui/dist/semantic.css'
-import hljs from 'highlight.js/lib/highlight';
-import 'highlight.js/styles/googlecode.css'
+// import 'semantic-ui/dist/semantic.css'
 // import 'semantic-ui/dist/semantic.js'
 /**
  * Vue注册插件
@@ -59,8 +57,5 @@ const app = new Vue({
   router,
   render: (h) => h(App),
   mounted(){
-    document.querySelectorAll('pre code').forEach(function (i, e) {
-      hljs.highlightBlock(e)
-    });
   }
 }).$mount('#app')

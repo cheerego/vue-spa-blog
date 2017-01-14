@@ -1,10 +1,10 @@
 <template>
   <div class="ui card">
     <div class="image">
-      <img src="http://www.semantic-ui.cn/images/avatar2/large/kristy.png">
+      <img :src="avatar">
     </div>
     <div class="content">
-      <a class="header">Kristy</a>
+      <a class="header">{{name}}</a>
       <div class="meta">
         <span class="date">Joined in 2013</span>
       </div>
@@ -21,15 +21,18 @@
   </div>
 </template>
 
-<script>
+<script><img src="../../../../../Pictures/FN2V63AD2J.com.tencent.ScreenCapture2/2017-01-14 18.23.39.gif"/>
   import { init } from 'ityped';
   import config from '../../conf/config';
   export default{
     name: "",
     data(){
       return {
-        'github': config.profile.github,
-        'weibo': config.profile.weibo
+        github: config.profile.github,
+        weibo: config.profile.weibo,
+        avatar:config.profile.avatar_url,
+        name:config.profile.name
+
       }
     },
     mounted(){

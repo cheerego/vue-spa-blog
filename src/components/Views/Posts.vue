@@ -16,6 +16,7 @@
   import PostItem from '../Partials/PostItem.vue';
   import Stretch from 'vue-loading-spinner/src/components/Stretch.vue'
   import axios from 'axios'
+  import config from '../../conf/config'
   export default{
     name: "",
     data(){
@@ -55,7 +56,7 @@
     },
     created(){
       this.loading = true;
-      axios.get('http://localhost/laravel-blog/public/api/loadmore').then((res) => {
+      axios.get(`${config.server_base_url}/api/loadmore`).then((res) => {
         this.total = res.data.total
         this.per_page = res.data.per_page
         this.current_page = res.data.current_page
