@@ -16,7 +16,7 @@ npm run build //生成dist
 配置文件在项目目录下的src/conf/config.js下
 ```
 export default {
-  'server_base_url': 'http://localhost/laravel-blog/public', //这个配置项表示的是laravel的入口文件的目录
+  'server_base_url': 'http://localhost/laravel-blog/public', //这个配置项表示的是laravel的入口文件的目录，会根据这个路径去拼接api的链接
   'profile': {
     'github': 'https://github.com/cheerzz',
     'weibo': 'http://weibo.com/u/1767872324',
