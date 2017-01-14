@@ -19,12 +19,13 @@ Profile属性主要在profile里面添加与修改
 ```
 export default {
   // 路径是laravel的入口文件index.php的目录
-  'server_base_url': 'http://localhost/laravel-blog/public',
-  'profile': {
-    'github': 'https://github.com/cheerzz',
-    'weibo': 'http://weibo.com/u/1767872324',
-    'avatar_url':'http://www.semantic-ui.cn/images/avatar2/large/kristy.png',
-    'name':'placeless'
+  server_base_url: 'http://localhost/laravel-blog/public',
+  // 下面的内容将会在Profile.vue中显示
+  profile: {
+    github: 'https://github.com/cheerzz',
+    weibo: 'http://weibo.com/u/1767872324',
+    avatar_url:'http://www.semantic-ui.cn/images/avatar2/large/kristy.png',
+    name:'placeless'
   },
   url: {
     'getOnePost':'/api/getPost'
