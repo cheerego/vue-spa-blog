@@ -1,6 +1,30 @@
-# 我的目标很大
-* 想用vue写web
-* laravel 写 restful
-* react native 写文章发布
-* 如果可以，还想实现electron
+# 介绍
+使用Vue2.0的一个单页的blog
+使用laravel写的后端 https://github.com/cheerzz/laravel-blog
 希望在年后完成 2017-1-4 晚12：09：37
+# 安装
+```
+git clone
+npm install
+```
+# 运行
+```
+npm run dev //运行
+npm run build //生成dist
+```
+# 配置
+配置文件在项目目录下的src/conf/config.js下
+```
+export default {
+  'server_base_url': 'http://localhost/laravel-blog/public', //这个配置项表示的是laravel的入口文件的目录
+  'profile': {
+    'github': 'https://github.com/cheerzz',
+    'weibo': 'http://weibo.com/u/1767872324',
+    'avatar_url':''
+  },
+  url: {
+    'getOnePost':'/api/getPost'
+  }
+}
+```
+
