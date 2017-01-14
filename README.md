@@ -9,6 +9,7 @@ npm install
 ```
 # 运行
 ```
+//在运行前，在laravel注册，然后添加几篇文章、类别和标签
 npm run dev //运行
 npm run build //生成dist
 ```
