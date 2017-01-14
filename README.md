@@ -28,4 +28,5 @@ export default {
   }
 }
 ```
+
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/2017-01-14 18.28.44.gif)
