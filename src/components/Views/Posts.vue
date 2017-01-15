@@ -1,20 +1,21 @@
 <template>
   <div>
+
     <div class="article-list" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading"
          infinite-scroll-distance="10">
       <PostItem v-if="articles" v-for="article in articles" :article="article"></PostItem>
     </div>
     <div class="sticky-footer">
-      <Stretch v-if="loading"></Stretch>
-      <Stretch v-if="loading"></Stretch>
-      <Stretch v-if="loading"></Stretch>
+      <Spinner ></Spinner>
+      <!--<Spinner v-if="loading"></Spinner>-->
+      <!--<Spinner v-if="loading"></Spinner>-->
     </div>
     <div class="ui tiny message" v-show="!next_page_url">没有了更多得文章了^_^ </div>
   </div>
 </template>
 <script>
   import PostItem from '../Partials/PostItem.vue';
-  import Stretch from 'vue-loading-spinner/src/components/Stretch.vue'
+  import Spinner from '../Partials/Spinner.vue'
   import axios from 'axios'
   import config from '../../conf/config'
   export default{
@@ -72,7 +73,7 @@
     },
     components: {
       PostItem,
-      Stretch
+      Spinner
     }
   };
 </script>

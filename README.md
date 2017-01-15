@@ -36,4 +36,5 @@ export default {
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-2@2x.png)
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-3@2x.png)
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/QQ20170114-4@2x.png)
+![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/2017-01-15 16.19.16.gif)
 ![预览](https://github.com/cheerzz/vue-spa-blog/blob/master/2017-01-14 18.28.44.gif)
