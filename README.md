@@ -1,6 +1,7 @@
 # 介绍
 使用Vue2.0的一个单页的blog,有下滑加载使用的是饿了么的一个组件
 使用laravel写的后端(支持cors跨域访问) https://github.com/cheerzz/laravel-blog
+使用Css3动画编写的Spinner组件，在下面的gif中可以看到，src/components/Partials/Spinner.vue
 希望在年后完成 2017-1-4 晚12：09：37
 # 安装
 ```
