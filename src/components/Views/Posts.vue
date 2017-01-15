@@ -6,9 +6,9 @@
       <PostItem v-if="articles" v-for="article in articles" :article="article"></PostItem>
     </div>
     <div class="sticky-footer">
-      <Spinner ></Spinner>
-      <!--<Spinner v-if="loading"></Spinner>-->
-      <!--<Spinner v-if="loading"></Spinner>-->
+      <Spinner v-if="loading"></Spinner>
+      <Spinner v-if="loading"></Spinner>
+      <Spinner v-if="loading"></Spinner>
     </div>
     <div class="ui tiny message" v-show="!next_page_url">没有了更多得文章了^_^ </div>
   </div>
