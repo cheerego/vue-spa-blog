@@ -69,6 +69,7 @@
         this.articles = res.data.data
         this.loading = false
       }).catch((e) => {
+        console.log(e)
       })
     },
     components: {

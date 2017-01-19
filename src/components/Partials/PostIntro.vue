@@ -64,7 +64,7 @@
           this.loading = false
         })).catch(e => {
         console.log(e)
-        this.$router.push('/error')
+        //this.$router.push('/error')
       });
 
     },
