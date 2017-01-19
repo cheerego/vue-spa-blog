@@ -15,11 +15,16 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 // import 'semantic-ui/dist/semantic.css'
 // import 'semantic-ui/dist/semantic.js'
+import Hljs from 'highlight.js'
 /**
  * Vue注册插件
  */
 Vue.use(VueRouter)
 Vue.use(infiniteScroll)
+Vue.directive('highlightjs', function() {
+  let blocks = document.querySelectorAll('pre code');
+  Array.prototype.forEach.call(blocks, Hljs.highlightBlock);
+})
 const routes = [
   {path: '/', redirect: '/index'},
   {path: '/index', component: require('./components/Layout/Index.vue')},

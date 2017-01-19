@@ -11,10 +11,12 @@
       Created at:{{article.created_at | humanTime}}
     </p>
     <p>
-    <div class="extra content" v-show="tags"><a class="ui tag label" v-for="tag in tags">{{tag.name}}</a></div>
+    <div class="extra content" v-show="tags">
+      <a class="ui tag label" v-for="tag in tags">{{tag.name}}</a>
+    </div>
     </p>
     <i class="quote left icon big la"></i>
-    <p v-html="article.html" ref="post"></p>
+    <p v-html="article.html" ref="post" v-highlightjs></p>
     <!--<i class="quote right big icon"></i>-->
   </div>
 </template>
@@ -79,6 +81,10 @@
     methods: {},
     components: {}
   };
+
+
+
+
 </script>
 <style scoped lang="scss" rel="stylesheet/scss">
   .ui.piled.segment {
