@@ -16,7 +16,7 @@
     </div>
     </p>
     <i class="quote left icon big la"></i>
-    <p v-html="article.html" ref="post" v-highlightjs></p>
+    <p v-html="article.html" ref="post" v-highlight></p>
     <!--<i class="quote right big icon"></i>-->
   </div>
 </template>
@@ -24,8 +24,6 @@
   import moment from 'moment'
   import config from '../../conf/config'
   import axios from 'axios'
-  import hljs from 'highlight.js/lib/highlight';
-  import 'highlight.js/styles/codepen-embed.css'
   export default{
     name: "",
     props: [],
@@ -69,9 +67,6 @@
 
     },
     mounted(){
-      this.$nextTick(function () {
-        let codeTags = this.$refs.post.querySelectorAll('code')
-      })
     },
     filters: {
       humanTime(value){
